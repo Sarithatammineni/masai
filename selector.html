@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>Navigation bar</title>
+        <style>
+            *{
+                font-family: Arial, Helvetica, sans-serif;
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                
+            }
+            #header{
+                background-color:black;
+                color: white;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px 40px;
+            }
+
+            nav ul{
+                list-style: none;
+                display: flex;
+                gap: 30px;
+            }
+    
+            .nav-link{
+                color: white;
+                font-size: 16px;
+                cursor: pointer;
+            }
+            .nav-link:hover{
+                color: blue;
+            }
+
+            .nav-link:first-child{
+                font-weight: bold;
+                text-decoration: underline;
+            }
+            #footer{
+                background-color: #222;
+                text-align: center;
+                color: white;
+                font-size: 14px;
+            }
+            .nav-link:last-child{
+                color: blue;
+            }
+        #header,#footer{
+            margin: 10px 0;
+            padding: 15px 0;
+        }
+        </style>
+    </head>
+     <body>
+     <header id="header">
+   <div class="logo">
+             <span style="color: blue; font-weight: bold;">Be</span>blog
+        </div>
+        <nav>
+            <ul>
+                <li class="nav-link">Home</li>
+                <li class="nav-link">Web Design</li>
+                <li class="nav-link">Word Press</li>
+                <li class="nav-link">About us</li>
+                <li class="nav-link">BeAdvice</li>
+                <li class="nav-link">Buy BeTheme</li>
+            </ul>
+        </nav>
+    </header>
+        <footer id="footer">
+            <p> @2025 BeBlog. All rights reserved</p>
+        </footer>
+    </body>
+</html>

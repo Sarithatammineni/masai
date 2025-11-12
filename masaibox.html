@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Course Cards Layout</title>
+<style>
+ 
+  * {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: #f7f7f7;
+    padding: 40px;
+  }
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin: auto;
+  }
+
+  .card-container .card {
+    background-color: white;
+    width: 330px;
+    border-radius: 20px;
+    padding: 25px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-container .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+
+  .card > .header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
+  .header > img {
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+  }
+
+  .header h4 {
+    font-size: 14px;
+    color: #555;
+  }
+
+  .card .title {
+    font-weight: 600;
+    font-size: 17px;
+    color: black;
+    margin-bottom: 10px;
+  }
+
+  .card p, .card span {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .card span b {
+    font-weight: 600;
+    color: black;
+  }
+
+  .card .buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .buttons a {
+    text-decoration: none;
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid red;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .buttons a.learn {
+    background-color:red;
+    color: white;
+  }
+
+  .buttons a.brochure {
+    color: red;
+    background-color:white;
+  }
+
+  .buttons a:hover {
+    background-color: #b40000;
+    color: white;
+  }
+
+  #featured {
+    background-color:red;
+    color: white;
+  }
+
+  #featured .title, 
+  #featured p, 
+  #featured span, 
+  #featured h4 {
+    color:white;
+  }
+
+  #featured > .buttons a.learn {
+    background-color: white;
+    color: black;
+    border: none;
+  }
+
+  #featured > .buttons a.brochure {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+  }
+
+  .card + .card {
+    margin-top: 0;
+  }
+
+  @media (max-width:1024px){
+    .card{
+        width: 45%;
+    }
+  }
+
+   @media (max-width:768px){
+    .card{
+        width: 90%;
+    }
+  }
+
+</style>
+</head>
+<body>
+
+  <div class="card-container">
+
+    <div class="card">
+      <div class="header">
+        <img src="https://upload.wikimedia.org/wikipedia/en/b/bc/IIM_Sirmaur_Logo.png" alt="IIM Sirmaur">
+        <h4>IIM Sirmaur</h4>
+      </div>
+      
+      <div class="title">EDGE: Essentials of Data Analytics, Gen AI & Execution</div>
+      <p>06 months | Online</p>
+      <span>Qualifier test - <b>12th Nov 2025</b></span>
+      <div class="buttons">
+        <a href="#" class="learn">Learn more →</a>
+        <a href="#" class="brochure">Brochure →</a>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="header">
+        <img src="https://upload.wikimedia.org/wikipedia/en/5/56/IIT_Patna_Logo.png" alt="IIT Patna">
+        <h4>Vishlesan i-Hub IIT Patna</h4>
+      </div>
+      <div class="title">Product Management and Agentic AI</div>
+      <p>06 months | Online</p>
+      <span>Qualifier test - <b>12th Nov 2025</b></span>
+      <div class="buttons">
+        <a href="#" class="learn">Learn more →</a>
+        <a href="#" class="brochure">Brochure →</a>
+      </div>
+    </div>
+
+
+    <div class="card" id="featured">
+      <div class="header">
+        <img src="https://upload.wikimedia.org/wikipedia/en/5/56/IIT_Patna_Logo.png" alt="IIT Patna">
+        <h4>Vishlesan i-Hub IIT Patna</h4>
+      </div>
+      <div class="title">Certification Program in Data Analytics with Gen & Agentic AI</div>
+      <p>06 months | Online</p>
+      <span>Qualifier test - <b>9th Nov 2025</b></span>
+      <div class="buttons">
+        <a href="#" class="learn">Learn more →</a>
+        <a href="#" class="brochure">Brochure →</a>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="header">
+        <img src="https://upload.wikimedia.org/wikipedia/en/3/3e/IIM_Trichy_Logo.png" alt="IIM Trichy">
+        <h4>IIM Trichy</h4>
+      </div>
+      <div class="title">Product Management in the Agentic AI Era</div>
+      <p>06 months | Online</p>
+      <span>Qualifier test - <b>12th Nov 2025</b></span>
+      <div class="buttons">
+        <a href="#" class="learn">Learn more →</a>
+        <a href="#" class="brochure">Brochure →</a>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="header">
+        <img src="https://upload.wikimedia.org/wikipedia/en/1/1b/IIT_Roorkee_Logo.png" alt="IIT Roorkee">
+        <h4>iHUB DivyaSampark, IIT Roorkee</h4>
+      </div>
+      <div class="title">Future-Ready Product Management with Applied AI Program</div>
+      <p>06 months | Online</p>
+      <span>Qualifier test - <b>12th Nov 2025</b></span>
+      <div class="buttons">
+        <a href="#" class="learn">Learn more →</a>
+        <a href="#" class="brochure">Brochure →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="header">
+        <img src="https://upload.wikimedia.org/wikipedia/en/3/3d/NMIMS_Logo.png" alt="NMIMS">
+        <h4>NMIMS CDOE</h4>
+      </div>
+      <div class="title">Online MBA</div>
+      <p>02 Years | Online</p>
+      <span>Qualifier test - <b>12th Nov 2025</b></span>
+      <div class="buttons">
+        <a href="#" class="learn">Learn more →</a>
+        <a href="#" class="brochure">Brochure →</a>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
+
+   
+
+  

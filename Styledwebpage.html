@@ -1,0 +1,131 @@
+<html>
+    <head>
+        <style>
+
+           body{
+            font-family: Arial;
+            padding: 5px;
+            margin: 0;
+
+           } 
+
+        header{
+            border: 3px solid black;
+            padding: 5px;
+            text-align: center;
+            background: lightgrey;
+           }
+
+           a:hover{
+            text-decoration: underline;
+           }
+
+           .image{
+            width: 400px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0 , 0, 0,0.2);
+           }
+
+           .table{
+            border-collapse: collapse;
+           }
+
+           .table td{
+            border: 1px solid black;
+            padding: 10px;
+           }
+
+           .table tr:nth-child(odd){
+            background-color: #f2f2f2;
+           }
+
+           .table tr:nth-child(even){
+            background-color: #ffffff;
+           }
+
+           .button{
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+           }
+
+           .button:hover{
+            background-color: #45a049;
+           }
+
+           .paragraph{
+            text-align: justify;
+            color: darkgrey;
+            border: 2px solid ;
+           }
+
+           .footer{
+            background-color: plum;
+            font-size: 10px;
+            text-align: center;
+           }
+
+        </style>
+        </head>
+        <body>
+            <header>
+            
+                <h1 style="background-color: lightgrey; color:darkblue; font-size: 40px;" >
+                Welcome to My Webpage
+            </h1>
+            
+            <h2 style="font-weight: bold;color: green; font-size: 28px;" >
+                Learning Web Development
+            </h2>
+
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </header>
+            
+            <div class="image">
+            <img src="https://en.wikipedia.org/wiki/Mahindra_Thar">
+            </div>
+           
+            <div class="table">
+            
+                <table>
+                <tr>
+                    <td> Model 1</td>
+                    <td>Version 1</td>
+                </tr>
+                <tr>
+                    <td> Model 2</td>
+                    <td> Version 2</td>
+                </tr>
+                <tr>
+                    <td> Model 3</td>
+                    <td> Version 3</td>
+                </tr>
+            </table>
+           
+        </div>
+           
+           <div class="button"> Learn More</div>
+           <div class="paragraph">Mahindra Thar Variants
+<p>Mahindra Thar price for the base model starts at Rs. 9.99 Lakh and the top model price goes upto Rs. 16.99 Lakh (Avg. ex-showroom). Thar price for 7 variants is listed below.</p></div>
+
+<form >
+    <label for="name">Name:</label>
+    <input type="text" id="name"name = "name"><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <input type="submit" value="Submit">
+</form>
+
+<div class="footer">
+<footer>
+    <a href="https://www.google.com"></a>
+<p> My website. All copy rights reserved @2025</p>
+</footer>
+</div>
+
+        </body>
+</html>

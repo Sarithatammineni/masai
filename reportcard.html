@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Report Card</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+        }
+        table {
+            width: 100%;
+            margin-top: 10px;
+        }
+        img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        footer {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Student Report Card</h1>
+    </header>
+
+    <main>
+        <section>
+            <h3>Basic Information</h3>
+            <p><strong>Name:</strong> John Doe</p>
+            <p><strong>Gender:</strong> Male</p>
+            <p><strong>Class:</strong> 10</p>
+            <p><strong>Section:</strong> A</p>
+            <p><strong>Academic Year:</strong> 2024 - 2025</p>
+        </section>
+
+        <section>
+            <h3>Profile Picture</h3>
+            <img src="https://via.placeholder.com/120" alt="Student Photo">
+        </section>
+        <section>
+            <h3>Marks Details</h3>
+            <table>
+                <tr>
+                    <th>Subject</th>
+                    <th>Marks</th>
+                </tr>
+                <tr>
+                    <td>Mathematics</td>
+                    <td>95</td>
+                </tr>
+                <tr>
+                    <td>Science</td>
+                    <td>90</td>
+                </tr>
+                <tr>
+                    <td>English</td>
+                    <td>88</td>
+                </tr>
+                <tr>
+                    <td>Social Studies</td>
+                    <td>92</td>
+                </tr>
+                <tr>
+                    <td>Computer Science</td>
+                    <td>98</td>
+                </tr>
+            </table>
+        </section>
+
+        <aside>
+            <h3>Remarks</h3>
+            <p>Excellent performance. Keep up the good work.</p>
+        </aside>
+
+    </main>
+
+    <footer>
+        <table>
+            <tr>
+                <th>Total Marks</th>
+                <th>Signature</th>
+            </tr>
+            <tr>
+                <td colspan="2">Total:463/500 | Signature:_________________________</td>
+            </tr>
+        </table>
+        
+        <button onclick="window.print()">Print Report Card</button>
+    </footer>
+
+</body>
+</html>`
