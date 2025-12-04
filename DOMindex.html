@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Paragraph Manager</title>
+  <style>
+    #container {
+      margin-top: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      width: 300px;
+    }
+  </style>
+</head>
+<body>
+
+  <button id="addBtn">Add Paragraph</button>
+  <button id="removeBtn">Remove Last Paragraph</button>
+
+  <div id="container"></div>
+
+  <script>
+    const container = document.getElementById('container');
+
+    // Add Paragraph
+    document.getElementById('addBtn').addEventListener('click', () => {
+      const p = document.createElement('p');
+      p.textContent = "This is a new paragraph.";
+      container.appendChild(p);
+    });
+
+    // Remove Last Paragraph
+    document.getElementById('removeBtn').addEventListener('click', () => {
+      if (container.lastChild) {
+        container.removeChild(container.lastChild);
+      }
+    });
+  </script>
+
+</body>
+</html>
